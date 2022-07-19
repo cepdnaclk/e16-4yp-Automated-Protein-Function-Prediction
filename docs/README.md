@@ -15,7 +15,7 @@ title:
 
 - eNumber, Name, [email](mailto:name@email.com)
 - eNumber, Name, [email](mailto:name@email.com)
-- eNumber, Name, [email](mailto:name@email.com)
+- E16096, Ekanayake J.E.M.D.Y., [email](mailto:e16096@eng.pdn.ac.lk)
 
 #### Supervisors
 
