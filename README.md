@@ -28,6 +28,7 @@ This project will develop computational methods based on machine learning that c
 
 * Implement algorithms for representation of biological protein data into computer representable form and implement efficient classification algorithms for protein function prediction.
 * Implement a model for accurate and efficient protein function prediction.
+
 [comment]: # "Dissemination of findings with a publication."
 [comment]: # "A public web-server (if time permits)"
 
