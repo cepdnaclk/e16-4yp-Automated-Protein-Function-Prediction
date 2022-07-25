@@ -9,7 +9,7 @@ title: Automated Protein Function Prediction Using Machine Learning Techniques
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
-# Project Title
+# Automated Protein Function Prediction Using Machine Learning Techniques
 
 #### Team
 
@@ -19,8 +19,8 @@ title: Automated Protein Function Prediction Using Machine Learning Techniques
 
 #### Supervisors
 
-- Dr. Damayanthi Herath, [email](mailto:name@eng.pdn.ac.lk)
-- Name, [email](mailto:name@eng.pdn.ac.lk)
+- Dr. Damayanthi Herath, [email](mailto:damayanthiherath@eng.pdn.ac.lk)
+- Dr. Indika Kahanda, [email](mailto:indika.kahanda@unf.edu)
 
 #### Table of content
 
@@ -35,9 +35,9 @@ title: Automated Protein Function Prediction Using Machine Learning Techniques
 
 ---
 
-This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)
+[comment]: # "This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)"
 
-![Sample Image](./images/sample.png)
+[comment]: # "![Sample Image](./images/sample.png)"
 
 ## Abstract
 
