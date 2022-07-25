@@ -1,29 +1,29 @@
 {
     "team": [
         {
-            "name": "Team Member Name 1",
-            "email": "email@eng.pdn.ac.lk",
-            "eNumber": "E/yy/xxx"
+            "name": " Parackrama G.T.W.",
+            "email": "e16267@eng.pdn.ac.lk",
+            "eNumber": "E/16/267"
         },
         {
-            "name": "Team Member Name 2",
-            "email": "email@eng.pdn.ac.lk",
-            "eNumber": "E/yy/xxx"
+            "name": "Ekanayake J.E.M.D.Y.",
+            "email": "e16096@eng.pdn.ac.lk",
+            "eNumber": "E/16/096"
         },
         {
-            "name": "Team Member Name 3",
-            "email": "email@eng.pdn.ac.lk",
-            "eNumber": "E/yy/xxx"
+            "name": "Prabodha U.A.K.",
+            "email": "e16290@eng.pdn.ac.lk",
+            "eNumber": "E/16/290"
         }
     ],
     "supervisors": [
         {
-            "name": "Dr. Supervisor 1",
-            "email": "email@eng.pdn.ac.lk"
+            "name": "Dr. Damayanthi Herath",
+            "email": "damayanthiherath@eng.pdn.ac.lk"
         },
         {
-            "name": "Dr. Supervisor 2",
-            "email": "email@eng.pdn.ac.lk"
+            "name": "Assistant Professor Indika Kahanda",
+            "email": "indika.kahanda@unf.edu"
         }
     ],
     "media": [
@@ -33,5 +33,5 @@
             "url": "#"
         }
     ],
-    "tags": ["Final Year Projects"]
+    "tags": ["Final Year Projects,Protein Function Prediction, Machine Learning"]
 }
