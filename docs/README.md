@@ -63,11 +63,11 @@ The accurate annotation of protein functions is the key to understanding life at
 ## Conclusion
 
 ## Publications
-1. [Semester 7 report](./)
-2. [Semester 7 slides](./)
-3. [Semester 8 report](./)
-4. [Semester 8 slides](./)
-5. Author 1, Author 2 and Author 3 "Research paper title" (2021). [PDF](./).
+[comment]: # "1. [Semester 7 report](./)"
+[comment]: # "2. [Semester 7 slides](./)"
+[comment]: # "3. [Semester 8 report](./)"
+[comment]: # "4. [Semester 8 slides](./)"
+[comment]: # " (5. Author 1, Author 2 and Author 3 'Research paper title' (2021). [PDF](./)."
 
 
 ## Links
