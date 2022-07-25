@@ -3,8 +3,8 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name: eYY-4yp-project-template
-title:
+repository-name: e16-4yp-Automated-Protein-Function-Prediction
+title: Automated Protein Function Prediction Using Machine Learning Techniques
 ---
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
@@ -13,13 +13,13 @@ title:
 
 #### Team
 
-- eNumber, Name, [email](mailto:name@email.com)
-- eNumber, Name, [email](mailto:name@email.com)
-- E16096, Ekanayake J.E.M.D.Y., [email](mailto:e16096@eng.pdn.ac.lk)
+- E/16/290, Kalani Prabodha, [email](mailto:e16290@eng.pdn.ac.lk)
+- E/16/267, Wasana Parackrama, [email](mailto:e16267@eng.pdn.ac.lk)
+- E/16/096, Dulmini Ekanayake, [email](mailto:e16096@eng.pdn.ac.lk)
 
 #### Supervisors
 
-- Name, [email](mailto:name@eng.pdn.ac.lk)
+- Dr. Damayanthi Herath, [email](mailto:name@eng.pdn.ac.lk)
 - Name, [email](mailto:name@eng.pdn.ac.lk)
 
 #### Table of content
@@ -40,6 +40,17 @@ This is a sample image, to show how to add images to your page. To learn more op
 ![Sample Image](./images/sample.png)
 
 ## Abstract
+
+Protein function prediction is one of the significant tasks of bioinformatics that can help in a wide range of biological problems such as understanding disease mechanisms or finding drug targets. 
+
+The concept of protein function is highly context-sensitive and not very well-defined hence it acts as an umbrella term for all types of activities that a protein is involved in, be it cellular, molecular or physiological. Accordingly, several functional schemes have been proposed that were expected to have wide coverage, standardized format, hierarchical structure, disjoint categories, multiple functions, dynamic nature etc. 
+
+There are few such biomedical ontologies describing protein function, and the representations developed by the Gene Ontology (GO) Consortium is widely popular by now. The Gene Ontology (GO) provides a controlled vocabulary to classify the attributes of proteins based upon representative terms, referred to as “GO terms”. The GO system divides protein attributes into three main categories: molecular function (MF), biological process (BP) and cellular component (CC). Each GO term represents a unique functional attribute and all terms are associated to each other in a directed acyclic graph (DAG) structure based on inheritance relationships.Automated protein function prediction is critical for the annotation of uncharacterized protein sequences, where accurate prediction methods are still required.
+
+The early techniques for predicting protein function have been experimental. Normally, they focused on a specific target gene or protein, or a small set of proteins forming natural groups such as protein complexes. Experimental procedures for protein function prediction are very low throughput and are thus unable to annotate a significant fraction of proteins that are becoming available due to rapid advances in genome sequencing technology. This has motivated the development of computational
+techniques that utilize a variety of high-throughput experimental data for protein function prediction, such as protein and genome sequences, gene expression data, protein interaction networks, and phylogenetic profiles.
+
+The accurate annotation of protein functions is the key to understanding life at the molecular level and has great biomedical and pharmaceutical implications. In this particular project, it is planed to develop computational methods based on machine learning that can directly predict the set of GO terms for a given protein including models that can directly extract protein-function associations from biomedical literature. Accordingly, we expect to create an accurate prediction model that assigns the best sub-graph of the gene ontology to each new protein and output a prediction score for this sub-graph and/or each predicted term
 
 ## Related works
 
