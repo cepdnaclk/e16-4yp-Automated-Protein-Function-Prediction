@@ -74,8 +74,8 @@ The accurate annotation of protein functions is the key to understanding life at
 
 [//]: # ( NOTE: EDIT THIS LINKS WITH YOUR REPO DETAILS )
 
-- [Project Repository](https://github.com/cepdnaclk/repository-name)
-- [Project Page](https://cepdnaclk.github.io/repository-name)
+- [Project Repository](https://github.com/cepdnaclk/e16-4yp-Automated-Protein-Function-Prediction)
+- [Project Page](https://cepdnaclk.github.io/e16-4yp-Automated-Protein-Function-Prediction)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
