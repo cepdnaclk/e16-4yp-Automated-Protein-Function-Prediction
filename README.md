@@ -24,10 +24,10 @@ techniques that utilize a variety of high-throughput experimental data for prote
 This project will develop computational methods based on machine learning that can directly predict the set of GO terms for a given protein including models that can directly extract protein-function associations from biomedical literature. This accurate annotation of protein functions is the key to understanding life at the molecular level and has great biomedical and pharmaceutical implications
 
 
-## Expected Outcomes
+[comment]: # "## Expected Outcomes"
 
-* Implement algorithms for representation of biological protein data into computer representable form and implement efficient classification algorithms for protein function prediction.
-* Implement a model for accurate and efficient protein function prediction.
+[comment]: # "* Implement algorithms for representation of biological protein data into computer representable form and implement efficient classification algorithms for protein function prediction."
+[comment]: # "* Implement a model for accurate and efficient protein function prediction."
 
 [comment]: # "Dissemination of findings with a publication."
 [comment]: # "A public web-server (if time permits)"
