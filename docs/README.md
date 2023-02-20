@@ -54,12 +54,6 @@ The accurate annotation of protein functions is the key to understanding life at
 
 ## Related works
 
-There were many proposed models for AFP over the past few years to solve these problems. Generally, protein function identification is accomplished through manual or computational annotation. we noticed automated protein function prediction using GO terms ranging from traditional solutions to the most recently developed deep learning-based tools.We noticed the traditional approach representative solutions in three categories: similarity-based methods, probabilistic methods, and machine learning methods.OntoBlast,GOFigure,GOblet,Gotcha,PFP,INGA,GoFDR are some of similarity based methods and BMRF is an example for probabilistic based method.\cite{vu2021protein}
-
-GOPET,PoGO,FFPred3,PANNZER2,DeepText2GO,NetGo are some methods used by machine learning.These methods used Support vector machine (SVM),Weighted K-nearest neighbor classification techniques in their models.\cite{vu2021protein}
-
-When considering future of AFP Machine learning techniques are shown noticeble improvement.Newly identified proteins either lack identifiable sequences or their detectable terms have not been assigned any GO labels.Directly using the annotation from the amino acid sequence, without access to any additional references or databases to assign protein function is an ongoing task.
-
 ## Methodology
 
 ### Data set preparation
@@ -75,7 +69,62 @@ The above created dataset divided into species using the taxID created separate 
 Propagation of GO terms
 The ancestors of each GO term was propagated using go-basic.obo file , and added to GO term list in the dataset. The obsolete GO terms were removed.
 
+### Combining CNN and RNN
+
+#### Overview
+
+The analysis of combining CNN and RNN is a crucial area of research for solving problems in the field of Automatic Function Prediction (AFP) for proteins. AFP involves identifying the function of proteins automatically, without human intervention, and has numerous applications in various fields, including biotechnology, medicine, and drug discovery.
+
+From a literature review, it has been found that CNN is often used for AFP and has shown relatively high performance in approaches that use CNN. CNNs are deep learning models that are widely used for image processing tasks. They have also been applied to protein sequence analysis, where they have been shown to outperform other methods in terms of accuracy and computational efficiency.
+
+RNN, on the other hand, is also suitable for solving this problem. RNNs are a type of neural network designed to process sequential data by maintaining an internal memory of previous inputs. They have been widely used for tasks such as protein sequence analysis, where the sequence of amino acids in a protein plays a critical role in determining its function.
+
+To understand the effect of using CNN and RNN separately for solving the AFP problem for proteins, an analysis can be performed. This analysis will help identify the strengths and weaknesses of each method and which approach is better suited for the problem at hand.
+
+In addition, an analysis can also be conducted to understand the effect of combining CNN and RNN. The analysis can be based on the method used to combine the CNN and RNN components of the model. There are various methods for combining CNN and RNN, such as concatenation, addition, and attention. Each method has its strengths and weaknesses, and the performance of the model can vary depending on the method used.
+
+In conclusion, an analysis of combining CNN and RNN can provide valuable insights into the strengths and weaknesses of each method and which approach is better suited for the AFP problem for proteins. It can also help identify the best method for combining CNN and RNN based on the problem at hand, leading to the development of more accurate and efficient models for Automatic Function Prediction in proteins. The application of these methods can improve our understanding of proteins and lead to the development of new drugs and treatments for various diseases. The analysis of CNN and RNN can make significant contributions to the field of biotechnology, and it will continue to be an area of active research for years to come.
+
+#### Combining methods
+
+Combining multiple models is a common approach used to improve the accuracy and reliability of predictions in machine learning. In some cases, a single model may not be able to capture all of the complexities of a problem, and combining several models can provide a more accurate and robust solution. In this article, we will discuss the two methods for combining models that we experimented on: ensemble methods and concatenating feature vectors.
+
+Ensemble methods are a type of machine learning technique that involve combining multiple models to generate a final prediction. One of the simplest and most commonly used ensemble methods is the averaging method. In this method, the predictions of multiple models are averaged together to generate a final prediction. This method works well when the models being combined have similar accuracy and perform well on different parts of the data.
+
+Another commonly used ensemble method is the weighted average method. In this method, each model's predictions are weighted based on their relative performance. Models that perform better on the data receive higher weights, while models that perform poorly receive lower weights. This method can lead to better performance when the models have different strengths and weaknesses.
+
+Concatenating feature vectors is another method for combining models. In this method, the features generated by multiple models are concatenated into a single vector, and this vector is used to generate the final prediction. This method is often used when the different models generate features that are complementary to each other. For example, one model may focus on identifying visual features in an image, while another model may focus on identifying textual features in the same image. By combining the features generated by these models, the final model can capture more of the relevant information.
+
+There are several benefits to using a combination of models. One of the main benefits is increased accuracy. By combining multiple models, the final model is able to capture a broader range of features and information, leading to more accurate predictions. In addition, combining models can also improve the robustness of the final model. By using multiple models, the final model is less likely to be affected by noise or errors in the individual models.
+
+However, there are also some challenges associated with combining models. One challenge is the potential for overfitting. If the models used for combination are highly correlated, the final model may simply be combining noise rather than useful information. Another challenge is the computational cost. Combining multiple models can require significant computing resources, which may be a limitation in some applications.
+
+In conclusion, combining multiple models is a powerful approach for improving the accuracy and robustness of machine learning models. Ensemble methods and concatenating feature vectors are two popular methods for combining models, each with their own strengths and weaknesses. While there are some challenges associated with combining models, the benefits of increased accuracy and robustness make it a worthwhile technique to consider in many machine learning applications.
+
+
+### Integrating Protein Sequence data and Protein-Protein Interaction data
+
+#### Overview
+
+Protein sequence and protein-protein interactions play an important role in automatic function prediction (AFP) for proteins. In our study, we integrated both protein sequence and protein-protein interaction data to improve the accuracy of our AFP model. Protein sequence provides valuable information about the protein's primary structure, while protein-protein interactions provide insight into the protein's functional associations and potential pathways
+
 ## Experiment Setup and Implementation
+
+Accordingly we developed multiple models as follows and experimented on them with Yeast data.
+
+1. CNN baseline
+2. Seq-CNN
+3. Seq-RNN
+4. Ensemble Seq (average of Seq-CNN and Seq-RNN)
+5. Seq-CNN-RNN-vectConcat (concatenated feature vector)
+6. Seq-CNN-RNN-layerMixed (Mixed CNN RNN layers)
+7. PPI-RNN
+8. Integrated model version 1
+
+The table below contains the essential details of the above models.
+
+
+
 
 ## Results and Analysis
 
