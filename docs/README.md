@@ -149,6 +149,8 @@ The table below contains the essential details of the above models.
 ## Results and Analysis
 
 ## Conclusion
+* Ensemble Seq model shows the highest performance over the other above tested seuquence only methods for YEAST species.
+* Combining PPI data has improved the performance.
 
 ## Publications
 [comment]: # "1. [Semester 7 report](./)"
