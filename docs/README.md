@@ -67,7 +67,7 @@ The machine learning models were trained with the protein sequence data and the 
 
         The experimental annotations (class labels) for these proteins are available in this file in the format: where indicates one of the three GO ontologies: F: molecular function, P: biological process, C: cellular component
 
-    * we combine the data in two files using accession number of proteins and split the data into 3, based on GO ontologies
+    * Combined the data in two files using accession number of proteins and split the data into 3, based on GO ontologies
 * Seperated the dataset into ontologies which created separate dataset for each ontology
 * The above created dataset divided into species using the taxID created separate datasets for each species.
 
