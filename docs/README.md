@@ -59,15 +59,21 @@ The accurate annotation of protein functions is the key to understanding life at
 ### Data set preparation
 #### Preparation of Sequence Data
 
-- Used the [CAFA3]([https://pages.github.com/](https://biofunctionprediction.org/cafa-targets/)) training dataset .It contains:
-   - uniprot_sprot_exp.fasta contains protein sequences of all experimentally annotated proteins, downloaded from the UniProt database in September 2016. Only Swiss Prot sequences are included (in the fasta format). 
-   - uniprot_sprot_exp.txt  contains GO terms with their ontology details
-The experimental annotations (class labels) for these proteins are available in this file in the format: where indicates one of the three GO ontologies: F: molecular function, P: biological process, C: cellular component
-we combine the data in two files using accession number of proteins and split the data into 3, based on GO ontologies
-Seperated the dataset into ontologies which created dataset for each ontology
-The above created dataset divided into species using the taxID created separate datasets for each species.
-Propagation of GO terms
-The ancestors of each GO term was propagated using go-basic.obo file , and added to GO term list in the dataset. The obsolete GO terms were removed.
+* Used [CAFA3 training dataset](https://biofunctionprediction.org/cafa-targets/CAFA3_training_data.tgz). It contains :
+    * uniprot_sprot_exp.fasta contains protein sequences of all experimentally annotated proteins, downloaded from the UniProt database in September 2016.Only Swiss-Prot (reviewed) sequences are included (in the fasta format). 
+    * uniprot_sprot_exp.txt  contains GO terms with their ontology details
+
+        The experimental annotations (class labels) for these proteins are available in this file in the format: where indicates one of the three GO ontologies: F: molecular function, P: biological process, C: cellular component
+
+    * we combine the data in two files using accession number of proteins and split the data into 3, based on GO ontologies
+* Seperated the dataset into ontologies which created separate dataset for each ontology
+* The above created dataset divided into species using the taxID created separate datasets for each species.
+##### Propagation of GO terms
+The ancestors of each GO term was propagated using **[go-basic.obo](http://purl.obolibrary.org/obo/go/go-basic.obo) **file , and added to GO term list in the dataset. The obsolete GO terms were removed.
+
+#### Preparation of Protein-Protein interactions data(PPI)
+Prepared the list of proteins in CAFA3 training data set (list of uniprot identifiers).The database that used for collecting PPI data is [STRING](https://string-db.org/) database. STRING ID mappings for the Uniport IDs of the protein list created using the STRING API (Used:  https://string-db.org/help/api/ . Enviornment python3). With the collected data PPI input matrix created with the association scores.
+
 
 ### Combining CNN and RNN
 
