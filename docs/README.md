@@ -54,13 +54,20 @@ The accurate annotation of protein functions is the key to understanding life at
 
 ## Related works
 
-There were many proposed models for AFP over the past few years to solve these problems. Generally, protein function identification is accomplished through manual or computational annotation. We noticed automated protein function prediction using GO terms ranging from traditional solutions to the most recently developed deep learning-based tools.We noticed the traditional approach representative solutions in three categories: similarity-based methods, probabilistic methods, and machine learning methods.OntoBlast,GOFigure,GOblet,Gotcha,PFP,INGA,GoFDR are some of similarity based methods and BMRF is an example for probabilistic based method.
-
-GOPET,PoGO,FFPred3,PANNZER2,DeepText2GO,NetGo are some methods used by machine learning.These methods used Support vector machine (SVM),Weighted K-nearest neighbor classification techniques in their models.
-
-When considering future of AFP Machine learning techniques are shown noticeble improvement.Newly identified proteins either lack identifiable sequences or their detectable terms have not been assigned any GO labels.Directly using the annotation from the amino acid sequence, without access to any additional references or databases to assign protein function is an ongoing task
-
 ## Methodology
+
+### Data set preparation
+#### Preparation of Sequence Data
+
+- Used the [CAFA3]([https://pages.github.com/](https://biofunctionprediction.org/cafa-targets/)) training dataset .It contains:
+   - uniprot_sprot_exp.fasta contains protein sequences of all experimentally annotated proteins, downloaded from the UniProt database in September 2016. Only Swiss Prot sequences are included (in the fasta format). 
+   - uniprot_sprot_exp.txt  contains GO terms with their ontology details
+The experimental annotations (class labels) for these proteins are available in this file in the format: where indicates one of the three GO ontologies: F: molecular function, P: biological process, C: cellular component
+we combine the data in two files using accession number of proteins and split the data into 3, based on GO ontologies
+Seperated the dataset into ontologies which created dataset for each ontology
+The above created dataset divided into species using the taxID created separate datasets for each species.
+Propagation of GO terms
+The ancestors of each GO term was propagated using go-basic.obo file , and added to GO term list in the dataset. The obsolete GO terms were removed.
 
 ## Experiment Setup and Implementation
 
