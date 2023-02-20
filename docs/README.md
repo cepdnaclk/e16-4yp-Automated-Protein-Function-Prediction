@@ -54,6 +54,12 @@ The accurate annotation of protein functions is the key to understanding life at
 
 ## Related works
 
+There were many proposed models for AFP over the past few years to solve these problems. Generally, protein function identification is accomplished through manual or computational annotation. We noticed automated protein function prediction using GO terms ranging from traditional solutions to the most recently developed deep learning-based tools.We noticed the traditional approach representative solutions in three categories: similarity-based methods, probabilistic methods, and machine learning methods.OntoBlast,GOFigure,GOblet,Gotcha,PFP,INGA,GoFDR are some of similarity based methods and BMRF is an example for probabilistic based method.
+
+GOPET,PoGO,FFPred3,PANNZER2,DeepText2GO,NetGo are some methods used by machine learning.These methods used Support vector machine (SVM),Weighted K-nearest neighbor classification techniques in their models.
+
+When considering future of AFP Machine learning techniques are shown noticeble improvement.Newly identified proteins either lack identifiable sequences or their detectable terms have not been assigned any GO labels.Directly using the annotation from the amino acid sequence, without access to any additional references or databases to assign protein function is an ongoing task
+
 ## Methodology
 
 ## Experiment Setup and Implementation
