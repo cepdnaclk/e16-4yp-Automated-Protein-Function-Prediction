@@ -51,6 +51,7 @@ The early techniques for predicting protein function have been experimental. Nor
 
 The main target of the project was to create an accurate prediction model that assigns the best sub-graph of the gene ontology to each new protein and output a prediction score for this sub-graph and/or each predicted term. In this project two types of data are used to training the ML model, such as protein-protein interaction networks data and the protein sequence data with their GO terms. The experimental models in the project were created using two main DNN models, CNN and RNN. 
 
+Several different Deep learning models were created by combining these two components several ways, (CNN , RNN) and tested each of their performance. The comparison of their performance and the methodology followed are described below.
 
 ## Related works
 
