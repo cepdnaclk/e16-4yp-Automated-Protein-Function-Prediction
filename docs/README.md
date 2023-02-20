@@ -57,7 +57,7 @@ The accurate annotation of protein functions is the key to understanding life at
 ## Methodology
 
 ### Data set preparation
-The machine learning models are trained with the protein sequence data and the Protein-Protein interactions data.Below is the methodology followed for preparation of these data. 
+The machine learning models were trained with the protein sequence data and the Protein-Protein interactions data.Below is the methodology followed for preparation of these data. 
 
 #### Preparation of Sequence Data
 
@@ -78,7 +78,7 @@ The ancestors of each GO term was propagated using *[go-basic.obo](http://purl.o
 #### Preparation of Protein-Protein interactions data(PPI)
 * Prepared the list of proteins in CAFA3 training data set (list of uniprot identifiers).
 * The database that used for collecting PPI data is [STRING](https://string-db.org/) database. 
-* STRING ID mappings for the Uniport IDs of the protein list created using the STRING API (Used:  https://string-db.org/help/api/ . Enviornment python3). 
+* STRING ID mappings for the Uniport IDs of the protein list created using the [STRING API] ( https://string-db.org/help/api/ ). (Enviornment python3). 
 * With the collected data PPI input matrix created with the association scores.
 
 
