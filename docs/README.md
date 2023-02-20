@@ -85,9 +85,7 @@ The ancestors of each GO term was propagated using *[go-basic.obo](http://purl.o
 
 #### Overview
 
-The analysis of combining CNN and RNN is a crucial area of research for solving problems in the field of Automatic Function Prediction (AFP) for proteins. AFP involves identifying the function of proteins automatically, without human intervention, and has numerous applications in various fields, including biotechnology, medicine, and drug discovery.
-
-From a literature review, it has been found that CNN is often used for AFP and has shown relatively high performance in approaches that use CNN. CNNs are deep learning models that are widely used for image processing tasks. They have also been applied to protein sequence analysis, where they have been shown to outperform other methods in terms of accuracy and computational efficiency.
+From our literature review, we could observe that CNN is often used for AFP and has shown relatively high performance in approaches that use CNN. CNNs are deep learning models that are widely used for image processing tasks. They have also been applied to protein sequence analysis, where they have been shown to outperform other methods in terms of accuracy and computational efficiency.
 
 RNN, on the other hand, is also suitable for solving this problem. RNNs are a type of neural network designed to process sequential data by maintaining an internal memory of previous inputs. They have been widely used for tasks such as protein sequence analysis, where the sequence of amino acids in a protein plays a critical role in determining its function.
 
@@ -95,7 +93,7 @@ To understand the effect of using CNN and RNN separately for solving the AFP pro
 
 In addition, an analysis can also be conducted to understand the effect of combining CNN and RNN. The analysis can be based on the method used to combine the CNN and RNN components of the model. There are various methods for combining CNN and RNN, such as concatenation, addition, and attention. Each method has its strengths and weaknesses, and the performance of the model can vary depending on the method used.
 
-In conclusion, an analysis of combining CNN and RNN can provide valuable insights into the strengths and weaknesses of each method and which approach is better suited for the AFP problem for proteins. It can also help identify the best method for combining CNN and RNN based on the problem at hand, leading to the development of more accurate and efficient models for Automatic Function Prediction in proteins. The application of these methods can improve our understanding of proteins and lead to the development of new drugs and treatments for various diseases. The analysis of CNN and RNN can make significant contributions to the field of biotechnology, and it will continue to be an area of active research for years to come.
+In summary, an analysis of combining CNN and RNN can provide valuable insights into the strengths and weaknesses of each method and which approach is better suited for the AFP problem for proteins. It can also help identify the best method for combining CNN and RNN based on the problem at hand, leading to the development of more accurate and efficient models for Automatic Function Prediction in proteins. The application of these methods can improve our understanding of proteins and lead to the development of new drugs and treatments for various diseases. The analysis of CNN and RNN can make significant contributions to the field of biotechnology, and it will continue to be an area of active research for years to come.
 
 #### Combining methods
 
@@ -111,7 +109,7 @@ There are several benefits to using a combination of models. One of the main ben
 
 However, there are also some challenges associated with combining models. One challenge is the potential for overfitting. If the models used for combination are highly correlated, the final model may simply be combining noise rather than useful information. Another challenge is the computational cost. Combining multiple models can require significant computing resources, which may be a limitation in some applications.
 
-In conclusion, combining multiple models is a powerful approach for improving the accuracy and robustness of machine learning models. Ensemble methods and concatenating feature vectors are two popular methods for combining models, each with their own strengths and weaknesses. While there are some challenges associated with combining models, the benefits of increased accuracy and robustness make it a worthwhile technique to consider in many machine learning applications.
+In summary, combining multiple models is a powerful approach for improving the accuracy and robustness of machine learning models. Ensemble methods and concatenating feature vectors are two popular methods for combining models, each with their own strengths and weaknesses. While there are some challenges associated with combining models, the benefits of increased accuracy and robustness make it a worthwhile technique to consider in many machine learning applications.
 
 
 ### Integrating Protein Sequence data and Protein-Protein Interaction data
