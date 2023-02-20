@@ -70,6 +70,8 @@ The machine learning models are trained with the protein sequence data and the P
     * we combine the data in two files using accession number of proteins and split the data into 3, based on GO ontologies
 * Seperated the dataset into ontologies which created separate dataset for each ontology
 * The above created dataset divided into species using the taxID created separate datasets for each species.
+
+
 ##### Propagation of GO terms
 The ancestors of each GO term was propagated using *[go-basic.obo](http://purl.obolibrary.org/obo/go/go-basic.obo)* file , and added to GO term list in the dataset. The obsolete GO terms were removed.
 
