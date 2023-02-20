@@ -72,7 +72,6 @@ The machine learning models are trained with the protein sequence data and the P
 * The above created dataset divided into species using the taxID created separate datasets for each species.
 
 
-
 ##### Propagation of GO terms
 The ancestors of each GO term was propagated using *[go-basic.obo](http://purl.obolibrary.org/obo/go/go-basic.obo)* file , and added to GO term list in the dataset. The obsolete GO terms were removed.
 
@@ -134,6 +133,16 @@ Accordingly we developed multiple models as follows and experimented on them wit
 
 The table below contains the essential details of the above models.
 
+| Model                                                 | Input/Feature     | Architecture                                 | Combining methods             |
+|-------------------------------------------------------|-------------------|----------------------------------------------|-------------------------------|
+| CNN baseline                                          | Protein Sequence  | CNN                                          | -                             |
+| Seq-CNN                                               | Protein Sequence  | CNN                                          | -                             |
+| Seq-RNN                                               | Protein Sequence  | RNN                                          | -                             |
+| Ensemble Seq (average of Seq-CNN and Seq-RNN)         | Protein Sequence  | CNN + RNN                                    | Average Ensembling            |
+| Seq-CNN-RNN-vectConcat (concatenated feature vector)  | Protein Sequence  | CNN + RNN                                    | Concatenating feature vectors |
+| Seq-CNN-RNN-layerConcat (concatenated CNN RNN layers) | Protein Sequence  | CNN + RNN                                    | Mixing layers of CNN and RNN  |
+| PPI-RNN                                               | PPI               | RNN                                          | -                             |
+| Fully Integrated model(version 1)                     | Protein Sequence + PPI | CNN + RNN         | Average Ensembling (in sequence component),Concatenating feature vectors|
 
 
 
