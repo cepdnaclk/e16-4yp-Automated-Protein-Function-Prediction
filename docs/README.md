@@ -87,9 +87,7 @@ The ancestors of each GO term was propagated using *[go-basic.obo](http://purl.o
 
 #### Overview
 
-The analysis of combining CNN and RNN is a crucial area of research for solving problems in the field of Automatic Function Prediction (AFP) for proteins. AFP involves identifying the function of proteins automatically, without human intervention, and has numerous applications in various fields, including biotechnology, medicine, and drug discovery.
-
-From a literature review, it has been found that CNN is often used for AFP and has shown relatively high performance in approaches that use CNN. CNNs are deep learning models that are widely used for image processing tasks. They have also been applied to protein sequence analysis, where they have been shown to outperform other methods in terms of accuracy and computational efficiency.
+Through our literature review, we observed that CNN is often used for AFP and has shown relatively high performance in approaches that use CNN. CNNs are deep learning models that are widely used for image processing tasks. They have also been applied to protein sequence analysis, where they have been shown to outperform other methods in terms of accuracy and computational efficiency.
 
 RNN, on the other hand, is also suitable for solving this problem. RNNs are a type of neural network designed to process sequential data by maintaining an internal memory of previous inputs. They have been widely used for tasks such as protein sequence analysis, where the sequence of amino acids in a protein plays a critical role in determining its function.
 
@@ -120,7 +118,24 @@ In conclusion, combining multiple models is a powerful approach for improving th
 
 #### Overview
 
-Protein sequence and protein-protein interactions play an important role in automatic function prediction (AFP) for proteins. In our study, we integrated both protein sequence and protein-protein interaction data to improve the accuracy of our AFP model. Protein sequence provides valuable information about the protein's primary structure, while protein-protein interactions provide insight into the protein's functional associations and potential pathways
+While many machine learning algorithms have been developed to predict protein function, the accuracy of these models can be limited by the quality and quantity of available data.
+
+One way to improve the performance of AFP models is to integrate additional data sources, such as protein-protein interaction (PPI) networks. PPI networks provide valuable information about the relationships between different proteins, which can be used to infer the function of unannotated proteins. 
+
+Several studies have shown that integrating PPI networks can significantly improve the accuracy of AFP models. For example, studies has demonstrated that integrating PPI data with sequence-based features improved the performance of protein function prediction models. Similarly, some studies have shown that combining sequence and PPI data resulted in higher accuracy than using either data source alone.
+
+Integrating PPI networks can also help address some of the challenges associated with AFP, such as the limited availability of annotated proteins. Previous studies have shown that incorporating PPI data improved the performance of AFP models even when the training data was limited.
+
+In addition, integrating PPI networks into automated protein function prediction models can improve the accuracy of predicting protein functions related to the Biological Process Ontology (BPO) in gene ontology. PPI data provides valuable information about the interactions between different proteins, which can be used to infer the biological processes in which these proteins participate.
+
+Integrating PPI data with sequence-based features has been shown to increase the accuracy of AFP models in predicting BPO terms. This is because PPI data can help identify the functional context of a protein, such as the biological pathways in which it is involved, which can be difficult to infer from sequence data alone. By incorporating information about the interactions between proteins, the performance of AFP models can be improved for predicting BPO terms.
+
+Overall, integrating PPI networks with sequence-based features is a promising approach for improving the accuracy of AFP models in predicting BPO terms. By combining information from multiple data sources, such as PPI networks and sequence data, researchers can improve their understanding of the complex relationships between proteins and biological processes.
+
+However, integrating PPI networks can also introduce new challenges. For example, PPI data can be noisy, incomplete, or biased towards certain types of proteins or interactions. To address these challenges, several methods have been proposed for integrating PPI data with sequence-based features, such as network-based methods and kernel-based methods.
+
+In conclusion, integrating PPI networks with sequence-based features is a promising approach for improving the accuracy of AFP models. While there are some challenges associated with integrating PPI data, the benefits of higher accuracy and improved robustness make it a worthwhile strategy to consider in AFP research.
+
 
 ## Experiment Setup and Implementation
 
