@@ -174,8 +174,9 @@ Compared to the sequence-only methods that have combined CNN and RNN, ‘Integra
 The PPI network dataset has missing association scores in it. Therefore in future work, we expect to handle the missing accuracy scores to improve the prediction. And also we expect to follow more preprocessing steps on sequence data for further improvements.
 
 ## Conclusion
-* Ensemble Seq model shows the highest performance over the other above tested sequence only methods for YEAST species.
-* PPI data combined methods has improved performance than the sequence only methods.
+* Combining CNN and RNN has improved the performance of protein function prediction with sequence data compared to standalone CNN or RNN models.
+* PPI network data integrated methods has shown improved performance of protein function prediction than  the sequence-only methods tested above.Therefore by training with a higher number of protein data, the PPI integration can make a much higher improvement in the performance.
+
 
 ## Publications
 [comment]: # "1. [Semester 7 report](./)"
