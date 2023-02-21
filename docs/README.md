@@ -63,24 +63,24 @@ The machine learning models were trained with the protein sequence data and the 
 #### Preparation of Sequence Data
 
 * Used [CAFA3 training dataset](https://biofunctionprediction.org/cafa-targets/CAFA3_training_data.tgz). It contains :
-    * uniprot_sprot_exp.fasta contains protein sequences of all experimentally annotated proteins, downloaded from the UniProt database in September 2016.Only Swiss-Prot (reviewed) sequences are included (in the fasta format). 
+    * uniprot_sprot_exp.fasta contains protein sequences of all experimentally annotated proteins, downloaded from the UniProt database in September 2016. Only Swiss-Prot (reviewed) sequences are included (in the .fasta format). 
     * uniprot_sprot_exp.txt  contains GO terms with their ontology details
 
         The experimental annotations (class labels) for these proteins are available in this file in the format: where indicates one of the three GO ontologies: F: molecular function, P: biological process, C: cellular component
 
-    * Combined the data in two files using accession number of proteins and split the data into 3, based on GO ontologies
-* Seperated the dataset into ontologies which created separate dataset for each ontology
-* The above created dataset divided into species using the taxID created separate datasets for each species.
+    * we combine the data in two files using accession number of proteins and split the data into 3, based on GO ontologies
+* Separated the dataset into ontologies which created a separate dataset for each ontology
+* The above-created dataset divided into species using the taxID created separate datasets for each species.
 
 
 ##### Propagation of GO terms
-The ancestors of each GO term was propagated using *[go-basic.obo](http://purl.obolibrary.org/obo/go/go-basic.obo)* file , and added to GO term list in the dataset. The obsolete GO terms were removed.
+The ancestors of each GO term were propagated using *[go-basic.obo](http://purl.obolibrary.org/obo/go/go-basic.obo)* file, and added to the GO term list in the dataset. The obsolete GO terms were removed.
 
 #### Preparation of Protein-Protein interactions data(PPI)
-* Prepared the list of proteins in CAFA3 training data set (list of uniprot identifiers).
-* The database that used for collecting PPI data is [STRING](https://string-db.org/) database. 
-* STRING ID mappings for the Uniport IDs of the protein list created using the [STRING API] ( https://string-db.org/help/api/ ). (Enviornment python3). 
-* With the collected data PPI input matrix created with the association scores.
+* Prepared the list of proteins in the CAFA3 training data set (list of UniProt identifiers).
+* The database used for collecting PPI data is the [STRING](https://string-db.org/) database. 
+* STRING ID mappings for the UniProt IDs of the protein list created using the [STRING API] ( https://string-db.org/help/api/ ). (Environment python3).
+* With the collected data PPI input matrix was created with the association scores.
 
 
 ### Combining CNN and RNN
@@ -166,6 +166,12 @@ The table below contains the essential details of the above models.
 
 
 ## Results and Analysis
+
+When comparing sequence-only methods combined CNN and RNN methods have outperformed the Seq-CNN, Seq-RNN and CNN baseline. It is observed that there is a significant performance improvement in protein function prediction when CNN and RNN components are combined than the prediction with standalone components for sequence data.
+
+Compared to the sequence-only methods that have combined CNN and RNN, ‘Integrated model version 1’ has shown better performance. And also ‘Integrated model version 1’ shows a significant performance(Fmax) improvement for CCO ontology when trained using the HUMAN species data. It has not shown much performance difference between ontologies when trained with the YEAST species data. Therefore by training with a higher number of protein data, the PPI integration can make a much higher improvement in the performance.
+
+The PPI network dataset has missing association scores in it. Therefore in future work, we expect to handle the missing accuracy scores to improve the prediction. And also we expect to follow more preprocessing steps on sequence data for further improvements.
 
 ## Conclusion
 * Ensemble Seq model shows the highest performance over the other above tested sequence only methods for YEAST species.
