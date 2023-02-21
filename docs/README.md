@@ -79,7 +79,7 @@ The ancestors of each GO term were propagated using *[go-basic.obo](http://purl.
 #### Preparation of Protein-Protein interactions data(PPI)
 * Prepared the list of proteins in the CAFA3 training data set (list of UniProt identifiers).
 * The database used for collecting PPI data is the [STRING](https://string-db.org/) database. 
-* STRING ID mappings for the UniProt IDs of the protein list created using the [STRING API] ( https://string-db.org/help/api/ ). (Environment python3).
+* STRING ID mappings for the UniProt IDs of the protein list created using the [STRING API]( https://string-db.org/help/api/ ). (Environment python3).
 * With the collected data PPI input matrix was created with the association scores.
 
 
